@@ -1,8 +1,7 @@
 import java.util.*;
-public class AddNumber {
-    public static int sumNumber(int a, int b){
-        int sum = a + b;
-        return sum;
+public class MultiplicationNum {
+    public static int multiply(int a, int b){
+        return a * b;
     }
     public static void main(String[] args){
         Scanner sc = new Scanner (System.in);
@@ -10,8 +9,7 @@ public class AddNumber {
         int a = sc.nextInt();
         System.out.print("Enter 2nd number: ");
         int b = sc.nextInt();
-        int sum = sumNumber(a,b);
-        System.out.println("Sum = " +sum);
+        System.out.println("Multiplication = " + multiply(a,b));
         sc.close();
-    } 
+    }
 }

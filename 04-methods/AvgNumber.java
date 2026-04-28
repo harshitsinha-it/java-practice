@@ -1,8 +1,7 @@
 import java.util.*;
-public class AddNumber {
-    public static int sumNumber(int a, int b){
-        int sum = a + b;
-        return sum;
+public class AvgNumber {
+    public static double average(int a, int b, int c){
+        return (a + b + c) / 3.0;
     }
     public static void main(String[] args){
         Scanner sc = new Scanner (System.in);
@@ -10,8 +9,9 @@ public class AddNumber {
         int a = sc.nextInt();
         System.out.print("Enter 2nd number: ");
         int b = sc.nextInt();
-        int sum = sumNumber(a,b);
-        System.out.println("Sum = " +sum);
+        System.out.print("Enter 3rd number: ");
+        int c = sc.nextInt();
+        System.out.println("Average of 3 numbers= " + average(a,b,c));
         sc.close();
-    } 
+    }
 }
