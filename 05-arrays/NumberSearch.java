@@ -11,10 +11,15 @@ public class NumberSearch {
         }
         System.out.print("Enter a number to search: ");
         int x = sc.nextInt();
+        int flag = 0;
         for (int i = 0; i < size; i++){
             if (x == arr[i]){
-                System.out.println("Index of " + x + " is: " + i);
+                System.out.println("Found at index : " + i);
+                flag = 1;
             }
+        }
+        if (flag == 0){
+            System.out.println("Element not found");
         }
         sc.close();
     }
