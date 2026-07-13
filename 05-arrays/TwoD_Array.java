@@ -8,9 +8,11 @@ public class TwoD_Array {
         int coloumns = sc.nextInt();
         int[][] matrix = new int[rows][coloumns];
         System.out.println("Enter elements: ");
+        int sum = 0;
         for (int i = 0; i < rows; i++){
             for (int j = 0; j < coloumns; j++){
                 matrix[i][j] = sc.nextInt();
+                sum = sum + matrix[i][j];
             }
         }
         System.out.println("your matrix: ");
@@ -20,6 +22,7 @@ public class TwoD_Array {
             }
             System.out.println();
         }
+        System.out.println("sum of all elements of matrix= " + sum);
         sc.close(); 
     }
 }
